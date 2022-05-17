@@ -15,6 +15,8 @@ function getData(col) {
   var n = tab.rows.length;
   let header = tab.rows[0];
   let col_title = header.cells[col].innerText;
+  let subject = tab.rows[1].cells[4].innerText;
+  let date = document.querySelector(".pozn2 b").innerText;
   var i,
     data = col_title,
     tr,
@@ -41,7 +43,7 @@ function getData(col) {
   let url = URL.createObjectURL(blob);
   let file = document.createElement(`a`);
 
-  file.download = `file.csv`;
+  file.download = `${subject} - ${date}.csv`;
   file.href = url;
   document.body.appendChild(file);
   file.click();
