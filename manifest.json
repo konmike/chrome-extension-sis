@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Download column from table (SIS)",
+    "description": "Umožňuje stažení dat ze sloupce z tabulky v SIS - lidé přihlášení na zkoušku.",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://is.cuni.cz/studium/*"
+    ],
+    "icons": {
+        "48": "stev.png"
+    }
+}

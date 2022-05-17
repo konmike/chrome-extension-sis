@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download CSV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <label class="title" for="column">Vyberte sloupec:</label>
+      <select class="select" name="column" id="column">
+        <option value="3">Jméno</option>
+        <option value="12">Datum narození</option>
+        <option value="13">Email</option>
+        <option value="20" selected>UKČO</option>
+      </select>
+    </div>
+
+    <button class="button--download" id="download">Stáhnout data</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

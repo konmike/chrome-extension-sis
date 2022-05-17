@@ -1,0 +1,29 @@
+.wrap{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin-right: 0.7rem;
+    text-transform: uppercase;
+}
+
+.select{
+    padding: 0.2rem 0.3rem;
+}
+
+.button--download{
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: border-color 150ms;
+}
+.button--download:hover{
+    border-color: #d43241;
+}
